@@ -1,0 +1,146 @@
+.tableContainer {
+  overflow: hidden;
+  border-radius: 12px;
+  border: 1px solid rgb(224, 229, 235);
+}
+
+thead {
+  background-color: rgb(240, 243, 247);
+}
+
+tbody {
+  display: block;
+  height: 75vh;
+  overflow-y: scroll;
+}
+
+tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+thead,
+tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  position: relative;
+}
+
+th {
+  color: rgb(105, 113, 128);
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 16px;
+  letter-spacing: 0px;
+  padding: 8px 12px;
+  text-align: left;
+  width: fit-content;
+}
+
+th:first-child {
+  padding: 9px 17px;
+  text-align: center;
+  width: 48px;
+}
+
+td {
+  text-align: left;
+  padding: 16px 12px;
+  width: fit-content;
+}
+
+td:first-child {
+  padding: 14px 20px;
+  text-align: center;
+  color: #5e6674;
+  width: 48px;
+}
+
+td:last-child {
+  padding: 14px 20px;
+  color: #5e6674;
+}
+
+td:last-child {
+  color: #5e6674;
+}
+
+tr {
+  border-bottom: #e0e5eb 1px solid;
+  background-color: rgb(255, 255, 255);
+}
+
+tr:hover {
+  background-color: rgb(247, 248, 249);
+}
+
+.type {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+tbody::-webkit-scrollbar {
+  width: 12px;
+}
+
+tbody::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+tbody::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+  border: 3px solid #f1f1f1;
+}
+
+tbody::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.pagination {
+  display: flex;
+  justify-content: end;
+}
+
+.pagination__list {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  margin-right: 16px;
+  display: flex;
+  gap: 8px;
+}
+
+.pagination__button {
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border: 1px solid #ced6de;
+  border-radius: 6px;
+}
+
+.pagination__button:hover {
+  background-color: #ced6de;
+  cursor: pointer;
+}
+
+.delete {
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  background-color: #fee3e3;
+  border: none;
+  border-radius: 8px;
+}
+
+.delete:hover {
+  background-color: #fed7d7;
+}
